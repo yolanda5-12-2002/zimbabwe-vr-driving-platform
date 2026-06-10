@@ -1,0 +1,44 @@
+{
+  "version": "0.1.0",
+  "categories": [
+    {
+      "id": "hazard_perception",
+      "name": "Hazard perception",
+      "weight": 0.3,
+      "metrics": ["scan_interval", "reaction_time", "time_to_collision_margin", "early_speed_adjustment"]
+    },
+    {
+      "id": "road_rule_compliance",
+      "name": "Road-rule compliance",
+      "weight": 0.25,
+      "metrics": ["speed_limit_adherence", "sign_response", "lane_discipline", "indicator_use", "roadblock_compliance"]
+    },
+    {
+      "id": "vehicle_control",
+      "name": "Vehicle control smoothness",
+      "weight": 0.2,
+      "metrics": ["brake_smoothness", "steering_jerk", "gear_selection", "clutch_control", "lane_position_stability"]
+    },
+    {
+      "id": "emergency_response",
+      "name": "Emergency response",
+      "weight": 0.15,
+      "metrics": ["emergency_brake_timing", "escape_path_selection", "hazard_signal_use", "post_event_recovery"]
+    },
+    {
+      "id": "efficiency",
+      "name": "Fuel efficiency and mechanical sympathy",
+      "weight": 0.1,
+      "metrics": ["harsh_acceleration_count", "excessive_rev_time", "idle_time", "gear_efficiency", "brake_waste"]
+    }
+  ],
+  "criticalFailures": [
+    "collision",
+    "pedestrian_collision",
+    "animal_collision",
+    "failure_to_stop_for_police",
+    "unsafe_overtake_into_oncoming",
+    "loss_of_control",
+    "school_zone_speed_excess"
+  ]
+}

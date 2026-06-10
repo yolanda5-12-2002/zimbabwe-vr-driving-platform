@@ -1,0 +1,57 @@
+[
+  {
+    "id": "zw_harare_uncontrolled_intersection_001",
+    "name": "Harare CBD uncontrolled intersection",
+    "environment": "harare_cbd",
+    "timeOfDay": "day",
+    "weather": "clear",
+    "hazards": ["failed_signal", "informal_pedestrian_crossing", "impatient_kombi"],
+    "skills": ["observation", "yielding", "speed_control", "lane_positioning"],
+    "criticalFailures": ["collision", "unsafe_entry", "red_light_violation_when_signal_recovers"],
+    "telemetryEvents": ["approach_speed", "mirror_check", "brake_profile", "gap_selection", "pedestrian_ttc"]
+  },
+  {
+    "id": "zw_urban_kombi_stop_001",
+    "name": "Informal kombi stop and passenger spillover",
+    "environment": "urban_corridor",
+    "timeOfDay": "day",
+    "weather": "clear",
+    "hazards": ["sudden_kombi_stop", "passenger_door_open", "pedestrian_step_out"],
+    "skills": ["following_distance", "anticipation", "safe_overtake_decision"],
+    "criticalFailures": ["rear_end_collision", "pedestrian_collision", "unsafe_overtake"],
+    "telemetryEvents": ["following_distance", "brake_reaction_time", "indicator_use", "lateral_clearance"]
+  },
+  {
+    "id": "zw_rural_murram_livestock_001",
+    "name": "Rural murram road with livestock crossing",
+    "environment": "rural_murram",
+    "timeOfDay": "late_afternoon",
+    "weather": "dry",
+    "hazards": ["dust_visibility", "livestock_crossing", "narrow_shoulder"],
+    "skills": ["speed_adaptation", "smooth_braking", "escape_path_planning"],
+    "criticalFailures": ["animal_collision", "loss_of_control", "unsafe_swerving"],
+    "telemetryEvents": ["surface_speed", "steering_jerk", "brake_pressure", "horn_use", "animal_ttc"]
+  },
+  {
+    "id": "zw_wet_season_flooding_001",
+    "name": "Wet-season flooding and low visibility",
+    "environment": "peri_urban_low_crossing",
+    "timeOfDay": "evening",
+    "weather": "heavy_rain",
+    "hazards": ["standing_water", "hidden_pothole", "reduced_visibility", "hydroplaning_risk"],
+    "skills": ["speed_selection", "light_and_wiper_use", "following_distance", "route_abort_decision"],
+    "criticalFailures": ["hydroplane_loss", "entering_unsafe_water", "rear_end_collision"],
+    "telemetryEvents": ["wiper_state", "headlight_state", "water_depth_entry_speed", "tyre_slip", "visibility_distance"]
+  },
+  {
+    "id": "zw_police_roadblock_001",
+    "name": "ZRP Traffic roadblock compliance",
+    "environment": "regional_trunk_route",
+    "timeOfDay": "day",
+    "weather": "clear",
+    "hazards": ["queue_compression", "officer_hand_signal", "temporary_cones", "freight_vehicle_ahead"],
+    "skills": ["compliance", "controlled_stop", "document_check_flow", "safe_restart"],
+    "criticalFailures": ["failure_to_stop", "officer_collision", "unsafe_queue_overtake"],
+    "telemetryEvents": ["approach_speed", "stopping_position", "hand_signal_response_time", "restart_indicator_use"]
+  }
+]

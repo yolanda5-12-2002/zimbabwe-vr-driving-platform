@@ -1,0 +1,50 @@
+[
+  {
+    "id": "honda_fit_rhd",
+    "name": "Honda Fit",
+    "configuration": "right_hand_drive",
+    "trainingUse": ["class_4_light_vehicle", "urban_basic", "parking", "defensive_driving"],
+    "transmissions": ["manual", "automatic"],
+    "priority": "vertical_slice"
+  },
+  {
+    "id": "toyota_hiace_kombi_rhd",
+    "name": "Toyota Hiace kombi",
+    "configuration": "right_hand_drive",
+    "trainingUse": ["public_transport_awareness", "npc_vehicle", "professional_driver_training"],
+    "transmissions": ["manual"],
+    "priority": "high"
+  },
+  {
+    "id": "toyota_corolla_rhd",
+    "name": "Toyota Corolla",
+    "configuration": "right_hand_drive",
+    "trainingUse": ["class_4_light_vehicle", "urban_basic", "highway"],
+    "transmissions": ["manual", "automatic"],
+    "priority": "medium"
+  },
+  {
+    "id": "isuzu_npr_rhd",
+    "name": "Isuzu NPR truck",
+    "configuration": "right_hand_drive",
+    "trainingUse": ["freight_interaction", "class_2_heavy_vehicle", "npc_vehicle"],
+    "transmissions": ["manual"],
+    "priority": "high"
+  },
+  {
+    "id": "emergency_ambulance_rhd",
+    "name": "Emergency ambulance",
+    "configuration": "right_hand_drive",
+    "trainingUse": ["emergency_vehicle_response", "npc_vehicle"],
+    "transmissions": ["manual", "automatic"],
+    "priority": "medium"
+  },
+  {
+    "id": "tractor_agricultural_rhd",
+    "name": "Agricultural tractor",
+    "configuration": "right_hand_drive",
+    "trainingUse": ["rural_hazard", "class_5_awareness", "npc_vehicle"],
+    "transmissions": ["manual"],
+    "priority": "medium"
+  }
+]
