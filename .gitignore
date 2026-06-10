@@ -1,4 +1,4 @@
-# Unreal Engine
+# Unreal Engine generated files
 Binaries/
 DerivedDataCache/
 Intermediate/
@@ -17,13 +17,13 @@ out/
 # Logs
 *.log
 
-# OS/editor files
+# OS and editor files
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
-# Large local captures/assets before review
+# Large local capture sources before asset review
 captures/
 raw_photogrammetry/
 raw_lidar/
