@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZimDriveVR Instructor Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Instructor Console</p>
+          <h1>ZimDriveVR</h1>
+        </div>
+        <div class="session-status">
+          <span class="status-dot"></span>
+          <span>Offline simulation preview</span>
+        </div>
+      </header>
+
+      <section class="dashboard-grid" aria-label="Instructor dashboard">
+        <section class="panel telemetry-panel">
+          <div class="panel-heading">
+            <h2>Live Telemetry</h2>
+            <span id="sessionClock">00:00</span>
+          </div>
+          <div class="gauges">
+            <article>
+              <span>Speed</span>
+              <strong id="speedValue">42</strong>
+              <small>km/h</small>
+            </article>
+            <article>
+              <span>Brake</span>
+              <strong id="brakeValue">18</strong>
+              <small>%</small>
+            </article>
+            <article>
+              <span>Steering</span>
+              <strong id="steeringValue">-4</strong>
+              <small>deg</small>
+            </article>
+            <article>
+              <span>Score</span>
+              <strong id="scoreValue">87</strong>
+              <small>/100</small>
+            </article>
+          </div>
+          <div class="telemetry-strip">
+            <label>
+              Lane offset
+              <meter id="laneMeter" min="-1" max="1" low="-0.45" high="0.45" optimum="0" value="0.12"></meter>
+            </label>
+            <label>
+              Following distance
+              <meter id="distanceMeter" min="0" max="5" low="1.5" high="4.5" optimum="3" value="2.8"></meter>
+            </label>
+            <label>
+              Hazard TTC
+              <meter id="ttcMeter" min="0" max="8" low="2" high="6" optimum="8" value="4.6"></meter>
+            </label>
+          </div>
+        </section>
+
+        <section class="panel scenario-panel">
+          <div class="panel-heading">
+            <h2>Scenario Injection</h2>
+            <span>Harare CBD slice</span>
+          </div>
+          <div class="actions">
+            <button data-event="Traffic-light failure">Traffic Light Failure</button>
+            <button data-event="Informal pedestrian crossing">Pedestrian Crossing</button>
+            <button data-event="Kombi stop">Kombi Stop</button>
+            <button data-event="Pothole hazard">Pothole Hazard</button>
+            <button data-event="Police roadblock">Police Roadblock</button>
+            <button data-event="Session flag">Flag For Debrief</button>
+          </div>
+        </section>
+
+        <section class="panel score-panel">
+          <div class="panel-heading">
+            <h2>Assessment</h2>
+            <span>Weighted rubric</span>
+          </div>
+          <div id="rubricList" class="rubric-list"></div>
+        </section>
+
+        <section class="panel event-panel">
+          <div class="panel-heading">
+            <h2>Event Timeline</h2>
+            <span id="eventCount">0 events</span>
+          </div>
+          <ol id="eventTimeline" class="timeline"></ol>
+        </section>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

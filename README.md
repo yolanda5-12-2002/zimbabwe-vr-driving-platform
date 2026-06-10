@@ -16,8 +16,15 @@ The product direction is intentionally not cartoon-like. The target experience i
 ## Repository Layout
 
 ```text
+ZimDriveVR.uproject
+Config/
+apps/
+  instructor-dashboard/
 docs/
   architecture.md
+  implementation-roadmap.md
+  unreal-project-setup.md
+  vertical-slice-spec.md
   photorealism-asset-pipeline.md
   scenario-catalog.md
   scoring-and-compliance.md
@@ -35,6 +42,13 @@ The recommended first working milestone is a vertical slice:
 2. Honda Fit right-hand-drive learner cockpit with manual and automatic gearbox variants.
 3. Instructor dashboard showing speed, lane position, hazard events, braking, steering smoothness, mirrors, indicator use, and scoring timeline.
 4. One examinable scenario chain: uncontrolled intersection, informal pedestrian crossing, pothole avoidance, and police roadblock compliance.
+
+## Current Build Scaffold
+
+- `ZimDriveVR.uproject` defines the Unreal Engine project shell.
+- `Config/` contains initial rendering, input, and project settings.
+- `apps/instructor-dashboard/` contains a local static dashboard prototype for telemetry and scenario-injection UX.
+- `docs/unreal-project-setup.md` explains how to open the project and create the first Unreal map.
 
 ## Compliance Note
 
